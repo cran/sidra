@@ -1,7 +1,7 @@
 Package: sidra
 Type: Package
 Title: Acesso aos Dados do 'SIDRA' do IBGE
-Version: 0.1.7
+Version: 0.1.9
 Authors@R: person(given = "Rodrigo Emmanuel", 
                     family = "Santana Borges",
                     role = c("cre","aut","cph"),
@@ -26,9 +26,9 @@ VignetteBuilder: knitr
 URL: https://github.com/rodrigoesborges/sidra
 BugReports: https://github.com/rodrigoesborges/sidra/issues
 NeedsCompilation: no
-Packaged: 2025-08-21 20:16:32 UTC; borges
+Packaged: 2025-09-05 19:53:35 UTC; borges
 Author: Rodrigo Emmanuel Santana Borges [cre, aut, cph] (affiliation -
     Distintive Lab & UnDF)
 Maintainer: Rodrigo Emmanuel Santana Borges <rodrigo@borges.net.br>
 Repository: CRAN
-Date/Publication: 2025-08-27 12:00:09 UTC
+Date/Publication: 2025-09-06 13:50:02 UTC

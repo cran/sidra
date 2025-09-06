@@ -1,9 +1,9 @@
-0b540678f5d44f3fbc1c1c970ac2fc75 *DESCRIPTION
+7059a3db150ab1b772fe7ea6e4976e67 *DESCRIPTION
 938abe450002f970f97c8f2484c397b4 *NAMESPACE
-8c08b3dffd7d91fa04773e4074748b5c *NEWS.md
+d91fc5d7d84e7f9f7219af38f8ff7e30 *NEWS.md
 2a46d24653c43fcfd539bfb8d6616d94 *R/agregados.R
-ac2dd8f3d5868a23837c4c26f95744e3 *R/call_Ibge.R
-3f4f6b2f8d828a043d07d1df12bcf867 *R/sidra.R
+54fea985ffb5758e538b49cdfcf59929 *R/call_Ibge.R
+744b8100b73525eb2c50354be10e5846 *R/sidra.R
 0666b69b0dd1d74c8d664b214216fa7d *R/sidrameta.R
 ba32def8bb11fba9632e86d35ff9f2d9 *R/tab_agr.R
 8a681a8352e16c6af0d9111136615b06 *R/tab_class.R
@@ -22,7 +22,7 @@ e600494bc432e92cc7b77184e22e6392 *inst/doc/sidra.Rmd
 a9a2e75cb8c4bbbf57596ecca0b3f3c1 *inst/doc/sidra.html
 f19972b15b347469baf2a7e1de7b72c1 *man/agregados.Rd
 3a4e5185f760c3de0edf871957b5e4fb *man/figures/logo.png
-c9b7083d3b4e1e8ae7df8464803f4dc3 *man/sidra.Rd
+f3df3823cded1c646454d8f418687394 *man/sidra.Rd
 6f08f1a82e5fccaf5e098e2960a5f0bf *man/sidrameta.Rd
 b8f100d51efc0c1ac6cfb3193b38a7ae *man/tab_agr.Rd
 cf12aabb81f3bc42f151404b17c2586a *man/tab_class.Rd
@@ -33,6 +33,6 @@ d3fb8c1692b40c2b04324069689d877e *man/tab_periodos.Rd
 4bd8959ee73e2eeeee604d9ae8cb96f0 *man/tab_search.Rd
 78d7bf17a6c782f643ef30341f69f9f7 *man/tab_vars.Rd
 23f065ec39a67daea5289efa509121b4 *tests/testthat.R
-cb8e70fe7c4f0dec5232798a53f366ae *tests/testthat/test-sidra.R
-472e41239526bfd1b561bff02547b844 *tests/testthat/test-tab_agr.R
+e39b30c6eb92d23e0ee317ef2979bcba *tests/testthat/test-sidra.R
+dcb8378def04f4e08a9604c56deb79dd *tests/testthat/test-tab_agr.R
 e600494bc432e92cc7b77184e22e6392 *vignettes/sidra.Rmd

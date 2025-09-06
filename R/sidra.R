@@ -24,7 +24,7 @@ sidra <- function (tabela, classificador="",
                    filtro_niveis,
                    periodo =
                      tab_meta(tabela)$periodos, variavel = "all",
-                   inicio, fim,part=FALSE,printurl=TRUE)
+                   inicio, fim,part=FALSE,printurl=FALSE)
 {
   if (length(tabela) > 1) {
     stop("Solicite os dados de uma tabela por vez. Para mais de uma use fun\u00e7\u00f5es da fam\u00edlia apply",
@@ -151,7 +151,7 @@ sidra <- function (tabela, classificador="",
 
   if (tamanho>1e5) {
     message(paste(
-      "A consulta exceder\u00e1 o limite de 100.000 permitido pela API.",
+      "A consulta exceder\u00e1 o limite de 100.000 pontos de dados permitido pela API.",
       "Vamos contornar este problema fazendo v\u00e1rias solicita\u00e7\u00f5es menores.",
       "Haver\u00e1 maior demora", sep = "\n"))
 
@@ -180,8 +180,9 @@ sidra <- function (tabela, classificador="",
 
   # verificação do conteúdo
   # Checar se a requisição foi bem-sucedida
-  if (httr::status_code(response) != 200) {
-    stop("Erro ao acessar a API do SIDRA.")
+  if (is.null(response)){
+    warning("Sem acesso conseguido a URL da API do IBGE.")
+    return(invisible(data.table::data.table()))
   }
 
 
