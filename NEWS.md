@@ -1,5 +1,20 @@
+# sidra 0.2.1
+
+* tab_meta() no longer crashes on aggregates without classifications
+  (e.g. table 6691): `lapply(1:length(...))` evaluated `1:0` and failed
+  with 'subscript out of bounds' on `classificacoes[[1]]`
+* sidra() omits the `classificacao` query parameter when the table has no
+  classifications, instead of sending `classificacao=[all]`, and parses the
+  response without classification columns in a dedicated branch
+
 # sidra 0.2.0
 
+* Suporte a tabelas sem classificacao (por exemplo a 6579, de populacao
+  residente estimada). Antes, tab_meta() e tab_niveis() falhavam com
+  "indice fora dos limites" e sidra() quebrava ao montar a consulta.
+* Corrige a conversao de valores para numerico: o suppressWarnings
+  envolvendo o mutate() inteiro anulava o as.numeric, devolvendo as
+  colunas de codigos e valores como texto.
 * Network-dependent tests now skip on CRAN and when the IBGE API is
   unreachable, removing intermittent test failures on CRAN check servers
 * Fixed test of tab_agr, which was incorrectly exercising the sidra function
